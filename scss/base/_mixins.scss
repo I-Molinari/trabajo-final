@@ -1,0 +1,6 @@
+@mixin respo($letra, $color, $alineacion, $espacio) {
+    font-size: $letra;
+    color: $color;
+    text-align: $alineacion;
+    padding: $espacio;
+}

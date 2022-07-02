@@ -1,0 +1,124 @@
+@import '../base/colors';
+@import '../base/variables';
+
+/* Productos inicio */
+.header-prod {
+    background-color: $yellow;
+}
+.animasion {
+    display: flex;
+    justify-content: space-around;
+    color: $black;
+    font-size: 0;
+    line-height: 1.5;
+}
+.efecto-title {
+    font-size: $medida-seis;
+    display: inline-block;
+
+    animation: anime 4.5s linear infinite;
+}
+.box-prod {
+    background-color: darken($rojo, 40%);
+    text-align: center;
+    height: auto;
+}
+.img__prod {
+    width: 20%;
+}
+.prod-subtitle {
+    font-size: $medida-cinco;
+    color: $rosa;
+    transition: all 0.5s linear;
+}
+.box-prod p {
+    margin: $medida-uno;
+    font-size: $medida-dos;
+    color: $rosa;
+    transition: all 1s linear;
+}
+
+.box__uno {grid-area: prote;}
+.box__dos {grid-area: crea;}
+.box__tres {grid-area: amino;}
+.box__cuatro {grid-area: multi;}
+.box__cinco {grid-area: ultra;}
+.box__seis {grid-area: barras;}
+
+.container__productos {
+    display: grid;
+    gap: $medida-uno;
+    padding: $medida-uno;
+}
+.container__productos {
+    grid-template-areas:
+    'prote'
+    'crea'
+    'amino'
+    'multi'
+    'ultra'
+    'barras';
+}
+@media screen and (min-width: 768px){
+    .container__productos {
+        grid-template-areas: 
+        'prote crea'
+        'amino multi'
+        'ultra barras';
+    }
+    .img__prod {
+        width: 20%;
+    }
+    .efecto-title {
+        font-size: $medida-siete;
+    }
+    .prod-subtitle {
+        font-size: $medida-cinco;
+        color: $yellow;
+    }
+    .box-prod p {
+        font-size: $medida-tres;
+        background-color: $yellow;
+        color: $black;
+    }
+}
+@media screen and (min-width: 1200px){
+    .container__productos {
+        grid-template-areas:
+        'prote crea amino'
+        'multi ultra barras';
+    }
+    .box-prod p, .prod-subtitle {
+        margin: $medida-dos;
+    }
+    .img__prod {
+        width: 15%;
+    }
+    .efecto-title {
+        font-size: $medida-ocho;
+    }
+    .prod-subtitle {
+        font-size: 3rem;
+        color: lighten($rojo, 30%);
+        &:hover {
+            font-size: $medida-siete;
+            color: $rosa;
+        }
+    }
+    .box-prod p {
+        font-size: $medida-nueve;
+        background-color: lighten($rojo, 30%);
+        color: $black;
+        &:hover {
+            font-size: $medida-diez;
+            color: $rosa;
+        }
+    }
+    .box__seis:hover .efecto-uno {
+        transform: translateX(10rem);
+    }
+    .box__seis:hover .efecto-dos {
+        transform: translateX(-10rem);
+    }
+}
+/* final productos */

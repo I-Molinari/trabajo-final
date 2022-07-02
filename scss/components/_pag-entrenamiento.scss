@@ -1,0 +1,112 @@
+@import '../base/mixins';
+@import '../base/listas';
+
+/* pagina de entrenamiento */
+.main__entrenamiento {
+    background-color: rgba(248, 31, 31, 0.673);
+}
+.titulo__entrenamiento {
+    @include respo(3rem, rgb(81, 0, 0), center, 10px);
+    background-color: red;
+}
+.subtitulo {
+    @include respo(1.5rem, rgb(81, 0, 0), center, 10px)
+}
+.descp {
+    @include respo(14px, rgb(43, 0, 0), center, 10px)
+}
+.item-dos, .item-cinco, .item-ocho, .item-once {
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+}
+.item-uno { grid-area: titulo1; }
+.item-dos { grid-area: frame1; }
+.item-tres { grid-area: text1; }
+.item-cuatro { grid-area: titulo2; }
+.item-cinco { grid-area: frame2; }
+.item-seis { grid-area: text2; }
+.item-siete { grid-area: titulo3; }
+.item-ocho { grid-area: frame3; }
+.item-nueve { grid-area: text3; }
+.item-diez { grid-area: titulo4; }
+.item-once { grid-area: frame4; }
+.item-doce { grid-area: text4; }
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+}
+.grid-container {
+    justify-items: center;
+    grid-template-areas:
+    'titulo1'
+    'frame1'
+    'text1'
+    'titulo2'
+    'frame2'
+    'text2'
+    'titulo3'
+    'frame3'
+    'text3'
+    'titulo4'
+    'frame4'
+    'text4';
+}
+@media only screen and (min-width: 768px) {
+    .grid-container {
+        grid-template-areas:
+        'titulo1 titulo1 titulo1 titulo1 titulo1 titulo1'
+        'frame1 frame1 text1 text1 text1 text1'
+        'titulo2 titulo2 titulo2 titulo2 titulo2 titulo2'
+        'frame2 frame2 text2 text2 text2 text2'
+        'titulo3 titulo3 titulo3 titulo3 titulo3 titulo3'
+        'frame3 frame3 text3 text3 text3 text3'
+        'titulo4 titulo4 titulo4 titulo4 titulo4 titulo4'
+        'frame4 frame4 text4 text4 text4 text4';
+    }
+    .titulo__entrenamiento {
+        @include respo(4rem, rgb(81, 0, 0), center, 20px);
+        background-color: red;
+    }
+    .subtitulo {
+        @include respo(2.5rem, rgb(81, 0, 0), center, 20px)
+    }
+    .descp {
+        @include respo(1.5rem, rgb(43, 0, 0), center, 20px)
+    }
+    .item-dos, .item-cinco, .item-ocho, .item-once {
+        width: 400px;
+        height: 200px;
+        padding: 20px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .main__entrenamiento {
+        background: url(../multimedia/imagenes/fondoentrenamiento.jpeg);
+        background-size: cover;
+    }
+    .grid-container {
+        grid-template-areas:
+        'titulo1 titulo1 titulo1 titulo2 titulo2 titulo2'
+        'frame1 frame1 frame1 frame2 frame2 frame2'
+        'text1 text1 text1 text2 text2 text2'
+        'titulo3 titulo3 titulo3 titulo4 titulo4 titulo4'
+        'frame3 frame3 frame3 frame4 frame4 frame4'
+        'text3 text3 text3 text4 text4 text4';
+    }
+    .subtitulo {
+        @include respo(3rem, rgb(0, 0, 0), center, 20px)
+    }
+    .descp {
+        border: solid 3px black;
+        @include respo(2rem, rgb(0, 0, 0), center, 20px)
+    }
+    .item-dos, .item-cinco, .item-ocho, .item-once {
+        width: 600px;
+        height: 300px;
+        padding: 20px;
+    }
+}
+/* Fin pagina de entrenamiento*/

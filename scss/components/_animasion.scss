@@ -1,0 +1,38 @@
+/* Animacion inicio */
+@keyframes anime {
+    0% {
+        transform: translate(-30%, 0);
+    }
+    50% {
+        text-shadow: 0 25px 50px rgb(255, 0, 0);
+    }
+    100% {
+        transform: translate(30%, 0);
+    }
+    }
+    
+    .animasion span:nth-child(2) {
+        animation-delay: 0.5s;
+    }
+    .animasion span:nth-child(3) {
+        animation-delay: 1s;
+    }
+    .animasion span:nth-child(4) {
+        animation-delay: 1.5s;
+    }
+    .animasion span:nth-child(5) {
+        animation-delay: 2s;
+    }
+    .animasion span:nth-child(6) {
+        animation-delay: 2.5s;
+    }
+    .animasion span:nth-child(7) {
+        animation-delay: 3s;
+    }
+    .animasion span:nth-child(8) {
+        animation-delay: 3.5s;
+    }
+    .animasion span:nth-child(9) {
+        animation-delay: 4s;
+    }
+    /* fin Animacion */

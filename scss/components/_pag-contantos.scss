@@ -1,0 +1,133 @@
+/* Contactos inicio */
+
+.header__contact {
+    background-color: rgb(255, 102, 0);
+    font-size: 3rem;
+    color: rgb(116, 5, 5);
+    text-align: center;
+}
+.main__contact {
+    background-color: rgb(118, 47, 0);
+}
+.box-uno {grid-area: titulo1;}
+.box-dos {grid-area: video1;}
+.box-tres {grid-area: texto1;}
+.box-cuatro {grid-area: titulo2;}
+.box-cinco {grid-area: video2;}
+.box-seis {grid-area: texto2;}
+
+.contact__container {
+    display: grid;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+.contact__container {
+    grid-template-areas: 
+    'titulo1'
+    'video1'
+    'texto1'
+    'titulo2'
+    'video2'
+    'texto2';
+}
+.box-cinco, .box-dos {
+    width: 300px;
+    height: 150px;
+    padding: 10px;
+}
+.subtitulo__lugar {
+    font-size: 1.5rem;
+    color: rgb(199, 82, 4);
+    text-align: center;
+}
+.descp__lugar {
+    font-size: 14px;
+    color: rgb(199, 82, 4);
+    text-align: center;
+}
+.subtitulo__compe {
+    font-size: 1.5rem;
+    color: rgb(199, 82, 4);
+    text-align: center;
+}
+.descp__compe {
+    font-size: 14px;
+    color: rgb(199, 82, 4);
+    text-align: center;
+}
+@media only screen and (min-width: 768px) {
+    .main__contact {
+        background: url("../multimedia/imagenes/fondoContact.jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .contact__container {
+        grid-template-areas: 
+        'titulo1 titulo1'
+        'video1 texto1'
+        'titulo2 titulo2'
+        'video2 texto2';
+    }
+    .box-cinco, .box-dos {
+        width: 400px;
+        height: 200px;
+        padding: 20px;
+    }
+    .subtitulo__lugar {
+        font-size: 2.5rem;
+        color: rgb(199, 82, 4);
+        text-align: center;
+    }
+    .descp__lugar {
+        font-size: 1.5rem;
+        color: rgb(199, 82, 4);
+        text-align: center;
+    }
+    .subtitulo__compe {
+        font-size: 2.5rem;
+        color: rgb(199, 82, 4);
+        text-align: center;
+    }
+    .descp__compe {
+        font-size: 1.5rem;
+        color: rgb(199, 82, 4);
+        text-align: center;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .contact__container {
+        grid-template-areas: 
+        'titulo1 titulo1 titulo1'
+        'video1 texto1 texto1'
+        'titulo2 titulo2 titulo2'
+        'video2 texto2 texto2';
+    }
+    .box-cinco, .box-dos {
+        width: 500px;
+        height: 250px;
+        padding: 20px;
+    }
+    .subtitulo__lugar {
+        font-size: 3rem;
+        color: rgb(199, 82, 4);
+        text-align: center;
+    }
+    .descp__lugar {
+        font-size: 2rem;
+        color: rgb(199, 82, 4);
+        border: solid 3px rgb(199, 82, 4);
+        text-align: center;
+    }
+    .subtitulo__compe {
+        font-size: 3rem;
+        color: rgb(199, 82, 4);
+        text-align: center;
+    }
+    .descp__compe {
+        font-size: 2rem;
+        color: rgb(199, 82, 4);
+        border: solid 3px rgb(199, 82, 4);
+        text-align: center;
+    }
+}
+/* fin contatos */

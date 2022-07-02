@@ -1,0 +1,19 @@
+@import 'components/pag-productos';
+@import 'components/footer';
+@import 'components/animasion';
+@import 'components/pag-inicio';
+@import 'components/pag-contantos';
+@import 'components/pag-entrenamiento';
+@import 'components/pag-ubicacion';
+@import 'components/pag-metodologia';
+@import 'components/navbar';
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+  }
+  .disclaimer {
+    display: none;
+  }

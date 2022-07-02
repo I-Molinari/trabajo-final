@@ -1,0 +1,115 @@
+@import '../base/colors';
+@import '../base/variables';
+
+
+/* inicio main */
+.main__inicio {
+    background-color: darken($rojo, 25%);
+}
+.element__whatsapp {
+    color: black;
+    background-color: rgb(10, 197, 10);
+    font-size: $medida-dos;
+    position: fixed;
+    right: 10%;
+    bottom: 15%;
+    border-radius: $medida-cuatro;
+    padding: 0 $medida-uno 0 $medida-uno;
+}
+.container__musica {
+    display: flex;
+    justify-content: center;
+}
+.img__treno {
+    width: 15%;
+}
+.articulo__titulo {
+    font-size: $medida-dos;
+    color: $black;
+    margin: $medida-uno 0 $medida-uno 0;
+}
+.articulo__paragraph {
+    font-size: 14px;
+    color: $black;
+    margin: $medida-uno 0 $medida-uno 0;
+}
+.xs-none {
+    display: none;
+}
+@media screen and (min-width: 768px) {
+    .container__musica {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .img__logo {
+        width: 7rem;
+    }
+    .element__whatsapp {
+        position: fixed;
+        right: $medida-uno;
+        bottom: 45%;
+        font-size: $medida-tres;
+    }
+    .xs-none {
+        display: flex;
+    }
+    .articulo__titulo {
+        fill-opacity: 70%;
+        background-color: transparent;
+        color: $rojo;
+        text-shadow: $medida-uno $medida-uno $medida-uno black;
+        font-size: $medida-cuatro;
+    }
+    .articulo__paragraph {
+        border: solid 2px $rojo;
+        background-color: transparent;
+        color: $rojo;
+        text-shadow: $medida-uno $medida-uno $medida-uno black;
+        font-size: $medida-dos;
+    }
+    .main__inicio {
+        background: url("../multimedia/imagenes/gym-uno.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .container__musica {
+        display: flex;
+        justify-content: center;
+    }
+    .img__logo {
+        width: 8rem;
+    }
+    .img__treno {
+        width: 10%;
+    }
+    .element__whatsapp {
+        position: fixed;
+        right: $medida-tres;
+        bottom: 20%;
+        font-size: $medida-cuatro;
+    }
+    .xs-none {
+        display: flex;
+    }
+    .articulo__titulo {
+        background-color: transparent;
+        color: $rojo;
+        text-shadow: $medida-uno $medida-uno $medida-uno black;
+        font-size: $medida-seis;
+    }
+    .articulo__paragraph {
+        border: solid 2px $rojo;
+        background-color: transparent;
+        color: $rojo;
+        text-shadow: $medida-uno $medida-uno $medida-uno black;
+        font-size: $medida-cuatro;
+    }
+    .main__inicio {
+        background: url("../multimedia/imagenes/gym-uno.webp");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+/*  Pag-Inicio - fin main */

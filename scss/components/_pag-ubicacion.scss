@@ -1,0 +1,106 @@
+/* pagina de ubicacion */
+.header__ubicacion {
+    background-color: rgb(73, 64, 64);
+    color: rgb(116, 5, 5);
+    text-align: center;
+}
+.titulo__ubicacion {
+    font-size: 3rem;
+}
+.main__ubicacion {
+    background-color: rgb(53, 39, 39)
+}
+.subtitulo__trans {
+    font-size: 1.5rem;
+    color: rgb(199, 43, 4);
+}
+.descp__trans {
+    font-size: 1rem;
+    color: rgb(219, 167, 132);
+}
+.descp__tren {
+    font-size: 1rem;
+    color: rgb(219, 167, 132);
+}
+.subtitulo__gps {
+    font-size: 2rem;
+    color: rgb(199, 43, 4);
+}
+.descp__gps {
+    font-size: 1rem;
+    color: rgb(219, 167, 132);
+}
+.mapa {
+    width: 80%;
+    height: 10rem;
+}
+.img__ubi {
+    width: 80%;
+}
+@media screen and (min-width: 768px) {
+    .titulo__ubicacion {
+        font-size: 4rem;
+    }
+    .subtitulo__trans {
+        font-size: 2.5rem;
+        color: rgb(199, 43, 4);
+        padding: 0.5rem;
+    }
+    .descp__trans {
+        font-size: 1.5rem;
+        color: rgb(219, 167, 132);
+        padding: 0.5rem;
+    }
+    .descp__tren {
+        font-size: 1.5rem;
+        color: rgb(219, 167, 132);
+        padding: 0.5rem;
+    }
+    .subtitulo__gps {
+        font-size: 3rem;
+        color: rgb(199, 43, 4);
+    }
+    .descp__gps {
+        font-size: 1.5rem;
+        color: rgb(219, 167, 132);
+    }
+    .img__ubi {
+        width: 20rem;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .titulo__ubicacion {
+        font-size: 4.5rem;
+    }
+    .subtitulo__trans {
+        font-size: 3.5rem;
+        color: rgb(199, 43, 4);
+        padding: 0.5rem;
+    }
+    .descp__trans {
+        font-size: 2rem;
+        color: rgb(219, 167, 132);
+        padding: 0.5rem;
+    }
+    .descp__tren {
+        font-size: 2rem;
+        color: rgb(219, 167, 132);
+        padding: 0.5rem;
+    }
+    .subtitulo__gps {
+        font-size: 3.5rem;
+        color: rgb(199, 43, 4);
+    }
+    .descp__gps {
+        font-size: 2rem;
+        color: rgb(219, 167, 132);
+    }
+    .mapa {
+        width: 80%;
+        height: 30rem;
+    }
+    .img__ubi {
+        width: 25rem;
+    }
+}
+/* Fin pagina de ubicacion */

@@ -1,0 +1,8 @@
+1_ Se modifico el Title de todos los HTML con mas informacion respetando los caracteres adecuados.
+2_ Se coloca Title a todos los videos y mapas de los HTML.
+3_Se coloco las descripciones de los ALTs.
+4_Se agrega la etiqueta meta-description en todos los HTML.
+5_Se agrega la etiqueta meta-keywords en todos los HTML.
+6_Se agrega la etiqueta meta og:title en todos los HTML.
+7_Se agrega la etiqueta meta og:url en todos los HTML.
+8_Se agrega la etiqueta meta og:description en todos los HTML.

@@ -1,0 +1,21 @@
+@import '../base/colors';
+@import '../base/variables';
+/* Inicio navbar*/
+.img__logo {
+    width: 6rem;
+    border: solid 3px darken($rojo, 60%);
+}
+.menu {
+    background-color: darken($rojo, 15%);
+}
+.inicio {
+    background-color: darken($rosa, 50%) !important;
+}
+.menu__btn {
+    background-color: rgb(243, 233, 233);
+    color: rgb(116, 5, 5);
+    border: solid 1px darken($rojo, 20%);
+    font-size: $medida-tres;
+    padding: 0 $medida-uno;
+}
+/* Fin navbar*/

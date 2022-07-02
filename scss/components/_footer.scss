@@ -1,0 +1,66 @@
+@import '../base/variables';
+@import '../base/colors';
+
+/* Footer inicio */
+footer {
+    background-color: rgb(73, 64, 64);
+    .pie__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sub__pie {
+        color: rgb(51, 9, 9);
+        font-size: $medida-tres;
+        padding: $medida-uno 0;
+    }
+    .public__pie {
+        font-size: $medida-dos;
+        padding: $medida-uno 0;
+    }
+    .desc__pie {
+        font-size: $medida-dos;
+        padding: $medida-uno 0;
+    }
+    .three__container {
+        display: flex;
+        justify-content: center;
+    }
+    .info__pie {
+        text-align: center;
+        font-size: $medida-uno;
+    }
+}
+@media screen and (min-width: 768px) {
+    footer {
+        .sub__pie {
+            font-size: $medida-cuatro;
+        }
+        .public__pie {
+            font-size: $medida-tres;
+        }
+        .desc__pie {
+            font-size: $medida-tres;
+        }
+        .info__pie {
+            font-size: $medida-dos;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    footer {
+        .sub__pie {
+            font-size: $medida-cinco;
+        }
+        .public__pie {
+            font-size: $medida-cuatro;
+        }
+        .desc__pie {
+            font-size: $medida-cuatro;
+        }
+        .info__pie {
+            font-size: $medida-dos;
+        }
+    }
+}
+/* fin footer */

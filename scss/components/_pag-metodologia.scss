@@ -1,0 +1,160 @@
+@import '../base/mixins';
+
+/* Pagina de metodologia */
+.header__metodo {
+    background-color: rgb(73, 64, 64);
+    display: flex;
+    justify-content: center;
+}
+.main__metodo {
+    background: url("../multimedia/imagenes/logotres.jpeg");
+    background-size: cover;
+}
+.titulo__metodo {
+    font-size: 3rem;
+    color: rgb(116, 5, 5);
+}
+.subtitulo__taek {
+    font-size: 2rem;
+    color: rgb(199, 82, 4);
+    text-align: center;
+}
+.descp__taek {
+    font-size: 1rem;
+    color: rgb(248, 203, 0);
+}
+.subtitulo__capoe {
+    font-size: 2rem;
+    color: rgb(199, 82, 4);
+    text-align: center;
+}
+.descp__capoe {
+    font-size: 1rem;
+    color: rgb(248, 203, 0);
+}
+.subtitulo__kick {
+    font-size: 2rem;
+    color: rgb(199, 82, 4);
+    text-align: center;
+}
+.descp__kick {
+    font-size: 1rem;
+    color: rgb(248, 203, 0);
+}
+.subtitulo__karate {
+    font-size: 2rem;
+    color: rgb(199, 82, 4);
+    text-align: center;
+}
+.descp__karate {
+    font-size: 1rem;
+    color: rgb(248, 203, 0);
+}
+
+.caja-uno {grid-area: taek;}
+.caja_dos {grid-area: capoe;}
+.caja-tres {grid-area: kick;}
+.caja-cuatro {grid-area: karate;}
+
+.grid-container-metodo {
+    display: grid;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+.grid-container-metodo {
+    grid-template-areas:
+    'taek'
+    'capoe'
+    'kick'
+    'karate';
+}
+@media screen and (min-width: 768px) {
+    .grid-container-metodo {
+        grid-template-areas:
+        'taek capoe'
+        'kick karate';
+    }
+    .titulo__metodo {
+        font-size: 4rem;
+    }
+    .subtitulo__taek {
+        font-size: 3rem;
+        color: black;
+    }
+    .descp__taek {
+        font-size: 1.5rem;
+        color: rgb(156, 70, 0);
+    }
+    .subtitulo__capoe {
+        font-size: 3rem;
+        color: black;
+    }
+    .descp__capoe {
+        font-size: 1.5rem;
+        color: rgb(156, 70, 0);
+    }
+    .subtitulo__kick {
+        font-size: 3rem;
+        color: black;
+    }
+    .descp__kick {
+        font-size: 1.5rem;
+        color: rgb(156, 70, 0);
+    }
+    .subtitulo__karate {
+        font-size: 3rem;
+        color: black;
+    }
+    .descp__karate {
+        font-size: 1.5rem;
+        color: rgb(156, 70, 0);
+    }
+}
+@media screen and (min-width: 1200px) {
+    .grid-container-metodo {
+        grid-template-areas:
+        'taek capoe'
+        'kick karate';
+    }
+    .titulo__metodo {
+        font-size: 5rem;
+    }
+    .subtitulo__taek {
+        font-size: 4rem;
+        color: rgb(87, 0, 0);
+    }
+    .descp__taek {
+        font-size: 1.8rem;
+        color: rgb(156, 70, 0);
+        background-color: yellow;
+    }
+    .subtitulo__capoe {
+        font-size: 4rem;
+        color: rgb(87, 0, 0);
+    }
+    .descp__capoe {
+        font-size: 1.8rem;
+        color: rgb(156, 70, 0);
+        background-color: yellow;
+    }
+    .subtitulo__kick {
+        font-size: 4rem;
+        color: rgb(87, 0, 0);
+    }
+    .descp__kick {
+        font-size: 1.8rem;
+        color: rgb(156, 70, 0);
+        background-color: yellow;
+    }
+    .subtitulo__karate {
+        font-size: 4rem;
+        color: rgb(87, 0, 0);
+    }
+    .descp__karate {
+        font-size: 1.8rem;
+        color: rgb(156, 70, 0);
+        background-color: yellow;
+    }
+}
+
+/* Fin pagina de metodologia */

@@ -1,0 +1,973 @@
+/* Productos inicio */
+.header-prod {
+  background-color: rgb(243, 178, 0);
+}
+
+.animasion {
+  display: flex;
+  justify-content: space-around;
+  color: rgb(9, 9, 9);
+  font-size: 0;
+  line-height: 1.5;
+}
+
+.efecto-title {
+  font-size: 3rem;
+  display: inline-block;
+  animation: anime 4.5s linear infinite;
+}
+
+.box-prod {
+  background-color: #330000;
+  text-align: center;
+  height: auto;
+}
+
+.img__prod {
+  width: 20%;
+}
+
+.prod-subtitle {
+  font-size: 2.5rem;
+  color: rgb(243, 187, 187);
+  transition: all 0.5s linear;
+}
+
+.box-prod p {
+  margin: 0.5rem;
+  font-size: 1rem;
+  color: rgb(243, 187, 187);
+  transition: all 1s linear;
+}
+
+.box__uno {
+  grid-area: prote;
+}
+
+.box__dos {
+  grid-area: crea;
+}
+
+.box__tres {
+  grid-area: amino;
+}
+
+.box__cuatro {
+  grid-area: multi;
+}
+
+.box__cinco {
+  grid-area: ultra;
+}
+
+.box__seis {
+  grid-area: barras;
+}
+
+.container__productos {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.container__productos {
+  grid-template-areas: "prote" "crea" "amino" "multi" "ultra" "barras";
+}
+
+@media screen and (min-width: 768px) {
+  .container__productos {
+    grid-template-areas: "prote crea" "amino multi" "ultra barras";
+  }
+  .img__prod {
+    width: 20%;
+  }
+  .efecto-title {
+    font-size: 3.5rem;
+  }
+  .prod-subtitle {
+    font-size: 2.5rem;
+    color: rgb(243, 178, 0);
+  }
+  .box-prod p {
+    font-size: 1.5rem;
+    background-color: rgb(243, 178, 0);
+    color: rgb(9, 9, 9);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container__productos {
+    grid-template-areas: "prote crea amino" "multi ultra barras";
+  }
+  .box-prod p, .prod-subtitle {
+    margin: 1rem;
+  }
+  .img__prod {
+    width: 15%;
+  }
+  .efecto-title {
+    font-size: 5rem;
+  }
+  .prod-subtitle {
+    font-size: 3rem;
+    color: #ff9999;
+  }
+  .prod-subtitle:hover {
+    font-size: 3.5rem;
+    color: rgb(243, 187, 187);
+  }
+  .box-prod p {
+    font-size: 1.7rem;
+    background-color: #ff9999;
+    color: rgb(9, 9, 9);
+  }
+  .box-prod p:hover {
+    font-size: 1.8rem;
+    color: rgb(243, 187, 187);
+  }
+  .box__seis:hover .efecto-uno {
+    transform: translateX(10rem);
+  }
+  .box__seis:hover .efecto-dos {
+    transform: translateX(-10rem);
+  }
+}
+/* final productos */
+/* Footer inicio */
+footer {
+  background-color: rgb(73, 64, 64);
+}
+footer .pie__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+footer .sub__pie {
+  color: rgb(51, 9, 9);
+  font-size: 1.5rem;
+  padding: 0.5rem 0;
+}
+footer .public__pie {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+footer .desc__pie {
+  font-size: 1rem;
+  padding: 0.5rem 0;
+}
+footer .three__container {
+  display: flex;
+  justify-content: center;
+}
+footer .info__pie {
+  text-align: center;
+  font-size: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  footer .sub__pie {
+    font-size: 2rem;
+  }
+  footer .public__pie {
+    font-size: 1.5rem;
+  }
+  footer .desc__pie {
+    font-size: 1.5rem;
+  }
+  footer .info__pie {
+    font-size: 1rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer .sub__pie {
+    font-size: 2.5rem;
+  }
+  footer .public__pie {
+    font-size: 2rem;
+  }
+  footer .desc__pie {
+    font-size: 2rem;
+  }
+  footer .info__pie {
+    font-size: 1rem;
+  }
+}
+/* fin footer */
+/* Animacion inicio */
+@keyframes anime {
+  0% {
+    transform: translate(-30%, 0);
+  }
+  50% {
+    text-shadow: 0 25px 50px rgb(255, 0, 0);
+  }
+  100% {
+    transform: translate(30%, 0);
+  }
+}
+.animasion span:nth-child(2) {
+  animation-delay: 0.5s;
+}
+
+.animasion span:nth-child(3) {
+  animation-delay: 1s;
+}
+
+.animasion span:nth-child(4) {
+  animation-delay: 1.5s;
+}
+
+.animasion span:nth-child(5) {
+  animation-delay: 2s;
+}
+
+.animasion span:nth-child(6) {
+  animation-delay: 2.5s;
+}
+
+.animasion span:nth-child(7) {
+  animation-delay: 3s;
+}
+
+.animasion span:nth-child(8) {
+  animation-delay: 3.5s;
+}
+
+.animasion span:nth-child(9) {
+  animation-delay: 4s;
+}
+
+/* fin Animacion */
+/* inicio main */
+.main__inicio {
+  background-color: maroon;
+}
+
+.element__whatsapp {
+  color: black;
+  background-color: rgb(10, 197, 10);
+  font-size: 1rem;
+  position: fixed;
+  right: 10%;
+  bottom: 15%;
+  border-radius: 2rem;
+  padding: 0 0.5rem 0 0.5rem;
+}
+
+.container__musica {
+  display: flex;
+  justify-content: center;
+}
+
+.img__treno {
+  width: 15%;
+}
+
+.articulo__titulo {
+  font-size: 1rem;
+  color: rgb(9, 9, 9);
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.articulo__paragraph {
+  font-size: 14px;
+  color: rgb(9, 9, 9);
+  margin: 0.5rem 0 0.5rem 0;
+}
+
+.xs-none {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .container__musica {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .img__logo {
+    width: 7rem;
+  }
+  .element__whatsapp {
+    position: fixed;
+    right: 0.5rem;
+    bottom: 45%;
+    font-size: 1.5rem;
+  }
+  .xs-none {
+    display: flex;
+  }
+  .articulo__titulo {
+    fill-opacity: 70%;
+    background-color: transparent;
+    color: rgb(255, 0, 0);
+    text-shadow: 0.5rem 0.5rem 0.5rem black;
+    font-size: 2rem;
+  }
+  .articulo__paragraph {
+    border: solid 2px rgb(255, 0, 0);
+    background-color: transparent;
+    color: rgb(255, 0, 0);
+    text-shadow: 0.5rem 0.5rem 0.5rem black;
+    font-size: 1rem;
+  }
+  .main__inicio {
+    background: url("../multimedia/imagenes/gym-uno.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container__musica {
+    display: flex;
+    justify-content: center;
+  }
+  .img__logo {
+    width: 8rem;
+  }
+  .img__treno {
+    width: 10%;
+  }
+  .element__whatsapp {
+    position: fixed;
+    right: 1.5rem;
+    bottom: 20%;
+    font-size: 2rem;
+  }
+  .xs-none {
+    display: flex;
+  }
+  .articulo__titulo {
+    background-color: transparent;
+    color: rgb(255, 0, 0);
+    text-shadow: 0.5rem 0.5rem 0.5rem black;
+    font-size: 3rem;
+  }
+  .articulo__paragraph {
+    border: solid 2px rgb(255, 0, 0);
+    background-color: transparent;
+    color: rgb(255, 0, 0);
+    text-shadow: 0.5rem 0.5rem 0.5rem black;
+    font-size: 2rem;
+  }
+  .main__inicio {
+    background: url("../multimedia/imagenes/gym-uno.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+/*  Pag-Inicio - fin main */
+/* Contactos inicio */
+.header__contact {
+  background-color: rgb(255, 102, 0);
+  font-size: 3rem;
+  color: rgb(116, 5, 5);
+  text-align: center;
+}
+
+.main__contact {
+  background-color: rgb(118, 47, 0);
+}
+
+.box-uno {
+  grid-area: titulo1;
+}
+
+.box-dos {
+  grid-area: video1;
+}
+
+.box-tres {
+  grid-area: texto1;
+}
+
+.box-cuatro {
+  grid-area: titulo2;
+}
+
+.box-cinco {
+  grid-area: video2;
+}
+
+.box-seis {
+  grid-area: texto2;
+}
+
+.contact__container {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.contact__container {
+  grid-template-areas: "titulo1" "video1" "texto1" "titulo2" "video2" "texto2";
+}
+
+.box-cinco, .box-dos {
+  width: 300px;
+  height: 150px;
+  padding: 10px;
+}
+
+.subtitulo__lugar {
+  font-size: 1.5rem;
+  color: rgb(199, 82, 4);
+  text-align: center;
+}
+
+.descp__lugar {
+  font-size: 14px;
+  color: rgb(199, 82, 4);
+  text-align: center;
+}
+
+.subtitulo__compe {
+  font-size: 1.5rem;
+  color: rgb(199, 82, 4);
+  text-align: center;
+}
+
+.descp__compe {
+  font-size: 14px;
+  color: rgb(199, 82, 4);
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .main__contact {
+    background: url("../multimedia/imagenes/fondoContact.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .contact__container {
+    grid-template-areas: "titulo1 titulo1" "video1 texto1" "titulo2 titulo2" "video2 texto2";
+  }
+  .box-cinco, .box-dos {
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+  }
+  .subtitulo__lugar {
+    font-size: 2.5rem;
+    color: rgb(199, 82, 4);
+    text-align: center;
+  }
+  .descp__lugar {
+    font-size: 1.5rem;
+    color: rgb(199, 82, 4);
+    text-align: center;
+  }
+  .subtitulo__compe {
+    font-size: 2.5rem;
+    color: rgb(199, 82, 4);
+    text-align: center;
+  }
+  .descp__compe {
+    font-size: 1.5rem;
+    color: rgb(199, 82, 4);
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .contact__container {
+    grid-template-areas: "titulo1 titulo1 titulo1" "video1 texto1 texto1" "titulo2 titulo2 titulo2" "video2 texto2 texto2";
+  }
+  .box-cinco, .box-dos {
+    width: 500px;
+    height: 250px;
+    padding: 20px;
+  }
+  .subtitulo__lugar {
+    font-size: 3rem;
+    color: rgb(199, 82, 4);
+    text-align: center;
+  }
+  .descp__lugar {
+    font-size: 2rem;
+    color: rgb(199, 82, 4);
+    border: solid 3px rgb(199, 82, 4);
+    text-align: center;
+  }
+  .subtitulo__compe {
+    font-size: 3rem;
+    color: rgb(199, 82, 4);
+    text-align: center;
+  }
+  .descp__compe {
+    font-size: 2rem;
+    color: rgb(199, 82, 4);
+    border: solid 3px rgb(199, 82, 4);
+    text-align: center;
+  }
+}
+/* fin contatos */
+/* pagina de entrenamiento */
+.main__entrenamiento {
+  background-color: rgba(248, 31, 31, 0.673);
+}
+
+.titulo__entrenamiento {
+  font-size: 3rem;
+  color: rgb(81, 0, 0);
+  text-align: center;
+  padding: 10px;
+  background-color: red;
+}
+
+.subtitulo {
+  font-size: 1.5rem;
+  color: rgb(81, 0, 0);
+  text-align: center;
+  padding: 10px;
+}
+
+.descp {
+  font-size: 14px;
+  color: rgb(43, 0, 0);
+  text-align: center;
+  padding: 10px;
+}
+
+.item-dos, .item-cinco, .item-ocho, .item-once {
+  width: 300px;
+  height: 150px;
+  padding: 10px;
+}
+
+.item-uno {
+  grid-area: titulo1;
+}
+
+.item-dos {
+  grid-area: frame1;
+}
+
+.item-tres {
+  grid-area: text1;
+}
+
+.item-cuatro {
+  grid-area: titulo2;
+}
+
+.item-cinco {
+  grid-area: frame2;
+}
+
+.item-seis {
+  grid-area: text2;
+}
+
+.item-siete {
+  grid-area: titulo3;
+}
+
+.item-ocho {
+  grid-area: frame3;
+}
+
+.item-nueve {
+  grid-area: text3;
+}
+
+.item-diez {
+  grid-area: titulo4;
+}
+
+.item-once {
+  grid-area: frame4;
+}
+
+.item-doce {
+  grid-area: text4;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  padding: 10px;
+}
+
+.grid-container {
+  justify-items: center;
+  grid-template-areas: "titulo1" "frame1" "text1" "titulo2" "frame2" "text2" "titulo3" "frame3" "text3" "titulo4" "frame4" "text4";
+}
+
+@media only screen and (min-width: 768px) {
+  .grid-container {
+    grid-template-areas: "titulo1 titulo1 titulo1 titulo1 titulo1 titulo1" "frame1 frame1 text1 text1 text1 text1" "titulo2 titulo2 titulo2 titulo2 titulo2 titulo2" "frame2 frame2 text2 text2 text2 text2" "titulo3 titulo3 titulo3 titulo3 titulo3 titulo3" "frame3 frame3 text3 text3 text3 text3" "titulo4 titulo4 titulo4 titulo4 titulo4 titulo4" "frame4 frame4 text4 text4 text4 text4";
+  }
+  .titulo__entrenamiento {
+    font-size: 4rem;
+    color: rgb(81, 0, 0);
+    text-align: center;
+    padding: 20px;
+    background-color: red;
+  }
+  .subtitulo {
+    font-size: 2.5rem;
+    color: rgb(81, 0, 0);
+    text-align: center;
+    padding: 20px;
+  }
+  .descp {
+    font-size: 1.5rem;
+    color: rgb(43, 0, 0);
+    text-align: center;
+    padding: 20px;
+  }
+  .item-dos, .item-cinco, .item-ocho, .item-once {
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main__entrenamiento {
+    background: url(../multimedia/imagenes/fondoentrenamiento.jpeg);
+    background-size: cover;
+  }
+  .grid-container {
+    grid-template-areas: "titulo1 titulo1 titulo1 titulo2 titulo2 titulo2" "frame1 frame1 frame1 frame2 frame2 frame2" "text1 text1 text1 text2 text2 text2" "titulo3 titulo3 titulo3 titulo4 titulo4 titulo4" "frame3 frame3 frame3 frame4 frame4 frame4" "text3 text3 text3 text4 text4 text4";
+  }
+  .subtitulo {
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+  }
+  .descp {
+    border: solid 3px black;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+  }
+  .item-dos, .item-cinco, .item-ocho, .item-once {
+    width: 600px;
+    height: 300px;
+    padding: 20px;
+  }
+}
+/* Fin pagina de entrenamiento*/
+/* pagina de ubicacion */
+.header__ubicacion {
+  background-color: rgb(73, 64, 64);
+  color: rgb(116, 5, 5);
+  text-align: center;
+}
+
+.titulo__ubicacion {
+  font-size: 3rem;
+}
+
+.main__ubicacion {
+  background-color: rgb(53, 39, 39);
+}
+
+.subtitulo__trans {
+  font-size: 1.5rem;
+  color: rgb(199, 43, 4);
+}
+
+.descp__trans {
+  font-size: 1rem;
+  color: rgb(219, 167, 132);
+}
+
+.descp__tren {
+  font-size: 1rem;
+  color: rgb(219, 167, 132);
+}
+
+.subtitulo__gps {
+  font-size: 2rem;
+  color: rgb(199, 43, 4);
+}
+
+.descp__gps {
+  font-size: 1rem;
+  color: rgb(219, 167, 132);
+}
+
+.mapa {
+  width: 80%;
+  height: 10rem;
+}
+
+.img__ubi {
+  width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+  .titulo__ubicacion {
+    font-size: 4rem;
+  }
+  .subtitulo__trans {
+    font-size: 2.5rem;
+    color: rgb(199, 43, 4);
+    padding: 0.5rem;
+  }
+  .descp__trans {
+    font-size: 1.5rem;
+    color: rgb(219, 167, 132);
+    padding: 0.5rem;
+  }
+  .descp__tren {
+    font-size: 1.5rem;
+    color: rgb(219, 167, 132);
+    padding: 0.5rem;
+  }
+  .subtitulo__gps {
+    font-size: 3rem;
+    color: rgb(199, 43, 4);
+  }
+  .descp__gps {
+    font-size: 1.5rem;
+    color: rgb(219, 167, 132);
+  }
+  .img__ubi {
+    width: 20rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .titulo__ubicacion {
+    font-size: 4.5rem;
+  }
+  .subtitulo__trans {
+    font-size: 3.5rem;
+    color: rgb(199, 43, 4);
+    padding: 0.5rem;
+  }
+  .descp__trans {
+    font-size: 2rem;
+    color: rgb(219, 167, 132);
+    padding: 0.5rem;
+  }
+  .descp__tren {
+    font-size: 2rem;
+    color: rgb(219, 167, 132);
+    padding: 0.5rem;
+  }
+  .subtitulo__gps {
+    font-size: 3.5rem;
+    color: rgb(199, 43, 4);
+  }
+  .descp__gps {
+    font-size: 2rem;
+    color: rgb(219, 167, 132);
+  }
+  .mapa {
+    width: 80%;
+    height: 30rem;
+  }
+  .img__ubi {
+    width: 25rem;
+  }
+}
+/* Fin pagina de ubicacion */
+/* Pagina de metodologia */
+.header__metodo {
+  background-color: rgb(73, 64, 64);
+  display: flex;
+  justify-content: center;
+}
+
+.main__metodo {
+  background: url("../multimedia/imagenes/logotres.jpeg");
+  background-size: cover;
+}
+
+.titulo__metodo {
+  font-size: 3rem;
+  color: rgb(116, 5, 5);
+}
+
+.subtitulo__taek {
+  font-size: 2rem;
+  color: rgb(199, 82, 4);
+  text-align: center;
+}
+
+.descp__taek {
+  font-size: 1rem;
+  color: rgb(248, 203, 0);
+}
+
+.subtitulo__capoe {
+  font-size: 2rem;
+  color: rgb(199, 82, 4);
+  text-align: center;
+}
+
+.descp__capoe {
+  font-size: 1rem;
+  color: rgb(248, 203, 0);
+}
+
+.subtitulo__kick {
+  font-size: 2rem;
+  color: rgb(199, 82, 4);
+  text-align: center;
+}
+
+.descp__kick {
+  font-size: 1rem;
+  color: rgb(248, 203, 0);
+}
+
+.subtitulo__karate {
+  font-size: 2rem;
+  color: rgb(199, 82, 4);
+  text-align: center;
+}
+
+.descp__karate {
+  font-size: 1rem;
+  color: rgb(248, 203, 0);
+}
+
+.caja-uno {
+  grid-area: taek;
+}
+
+.caja_dos {
+  grid-area: capoe;
+}
+
+.caja-tres {
+  grid-area: kick;
+}
+
+.caja-cuatro {
+  grid-area: karate;
+}
+
+.grid-container-metodo {
+  display: grid;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.grid-container-metodo {
+  grid-template-areas: "taek" "capoe" "kick" "karate";
+}
+
+@media screen and (min-width: 768px) {
+  .grid-container-metodo {
+    grid-template-areas: "taek capoe" "kick karate";
+  }
+  .titulo__metodo {
+    font-size: 4rem;
+  }
+  .subtitulo__taek {
+    font-size: 3rem;
+    color: black;
+  }
+  .descp__taek {
+    font-size: 1.5rem;
+    color: rgb(156, 70, 0);
+  }
+  .subtitulo__capoe {
+    font-size: 3rem;
+    color: black;
+  }
+  .descp__capoe {
+    font-size: 1.5rem;
+    color: rgb(156, 70, 0);
+  }
+  .subtitulo__kick {
+    font-size: 3rem;
+    color: black;
+  }
+  .descp__kick {
+    font-size: 1.5rem;
+    color: rgb(156, 70, 0);
+  }
+  .subtitulo__karate {
+    font-size: 3rem;
+    color: black;
+  }
+  .descp__karate {
+    font-size: 1.5rem;
+    color: rgb(156, 70, 0);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .grid-container-metodo {
+    grid-template-areas: "taek capoe" "kick karate";
+  }
+  .titulo__metodo {
+    font-size: 5rem;
+  }
+  .subtitulo__taek {
+    font-size: 4rem;
+    color: rgb(87, 0, 0);
+  }
+  .descp__taek {
+    font-size: 1.8rem;
+    color: rgb(156, 70, 0);
+    background-color: yellow;
+  }
+  .subtitulo__capoe {
+    font-size: 4rem;
+    color: rgb(87, 0, 0);
+  }
+  .descp__capoe {
+    font-size: 1.8rem;
+    color: rgb(156, 70, 0);
+    background-color: yellow;
+  }
+  .subtitulo__kick {
+    font-size: 4rem;
+    color: rgb(87, 0, 0);
+  }
+  .descp__kick {
+    font-size: 1.8rem;
+    color: rgb(156, 70, 0);
+    background-color: yellow;
+  }
+  .subtitulo__karate {
+    font-size: 4rem;
+    color: rgb(87, 0, 0);
+  }
+  .descp__karate {
+    font-size: 1.8rem;
+    color: rgb(156, 70, 0);
+    background-color: yellow;
+  }
+}
+/* Fin pagina de metodologia */
+/* Inicio navbar*/
+.img__logo {
+  width: 6rem;
+  border: solid 3px black;
+}
+
+.menu {
+  background-color: #b30000;
+}
+
+.inicio {
+  background-color: #951a1a !important;
+}
+
+.menu__btn {
+  background-color: rgb(243, 233, 233);
+  color: rgb(116, 5, 5);
+  border: solid 1px #990000;
+  font-size: 1.5rem;
+  padding: 0 0.5rem;
+}
+
+/* Fin navbar*/
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.disclaimer {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
